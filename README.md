@@ -43,10 +43,9 @@ Full technical writeups, which this repo's IOC list is sourced from:
 Artifact signing proves "this specific CI run produced this artifact." It
 does not prove the CI run's own instructions were the ones anyone reviewed.
 If an attacker can get a change into the workflow file that builds and
-signs your release, cosign or Trusted Publishing will faithfully sign
-whatever that modified workflow built, the same way a notary faithfully
-notarizes whatever is in the document someone hands them. That is true of
-any project whose signing step trusts its own repository's workflow files,
+signs your release, cosign or Trusted Publishing will sign whatever that
+modified workflow built, with no indication anything is wrong. That is
+true of any project whose signing step trusts its own repository's workflow files,
 agentgateway's release pipeline included: it also signs container images
 with cosign via GitHub OIDC. The defense this incident argues for is not
 "sign your artifacts" (LiteLLM already did), it is restricting who can
