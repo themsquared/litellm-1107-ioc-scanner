@@ -1,5 +1,7 @@
 # litellm-1107-ioc-scanner
 
+> 📖 **Read the write-up:** [LiteLLM 1.107.0: Why Image Signing Didn't Stop the Backdoor](https://webofmike.com/litellm-pypi-backdoor/)
+
 A stdlib-only Python scanner for the documented indicators of compromise
 from the LiteLLM 1.107.0 PyPI/Docker supply-chain attack (2026-10-21). No
 dependencies, no network calls, and no reproduction of the actual malware:
